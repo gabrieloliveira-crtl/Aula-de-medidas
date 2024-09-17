@@ -1,0 +1,84 @@
+uso de medidas do css: quando usar cada uma
+
+1 px (pixels)
+
+uso recomendado:
+
+para tamanhos fixos e precisos que nao devem variar com o tamanho da tela ou do texto. ideais para BORDAS, MARGENS e tamanhos de elementos que presiam MANTER uma aparencia CONSISTENTE.
+
+quando evitar o uso:
+
+quando voce deseja que o design seja mais flexivel e adaptavel a diferentes tamanhos de tela e configuraçoes de acessibilidade
+
+exemplo de uso:
+
+html 
+<div class="box">
+
+</div>
+
+css
+
+.box {
+    width: 300px; /* largura fixa */
+    height: 200px; /* altura fixa */
+    background-color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+2. em (relative to parent font size)
+
+uso recomendado
+
+quando voce deseja que o tamanho de um elemento seja relativo ao tamanho da fonte de seu elemento pai. 
+ideal para criar layouts e tipografria que se adaptam ao tamaho do texto do pai.
+
+quando evitar:
+
+se voce precisa de consistencia em relaçao ao tamanho da fonte em toda aplicaçao, independente da hierarquia de ementos.
+
+exemplo de uso:
+
+html 
+
+<div class="conteiner">
+
+        <div class="child">
+
+        </div>
+
+</div>
+
+css
+
+.conteiner {
+
+    font-size: 16px; /* tamanho base - pai */
+
+}
+
+.child{
+
+    font-size: 1.5em; /* 1.5 vezes o tamanho da fonte do pai (24px) */
+
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+3. rem (relative to root font size)
+
+uso recomendado:
+
+para criar tamanhos de fonte e espaçamentos consistentes em toda a aplicação, baseando-se no tamanho da fonte raiz (<html>).
+
+ideal para layouts e tipografria que precisam ser consistentes independente do tamanho da fonte dos elementos pais.
+
+quando evitar:
+
+quando voce quer um tamanho que seja relativo apenas ao elemento pai e nao á raiz.
+
+exemplo de uso
+
+html
+
