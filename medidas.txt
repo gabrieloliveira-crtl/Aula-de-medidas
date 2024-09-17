@@ -1,0 +1,37 @@
+unidade de medidas do css
+
+1. px (pixels)
+tamanho fixo.
+usado quando voce quer um valo exato, que nao muda com o tamanho da tela.
+exemplo: width: 200px; (largura de 200 pixels).
+
+
+2. em 
+Relativo ao tamanho da fonte do elemento pai, se o pai tem font-size: 20px; 1em será 20px. 
+Exemplo: font-size: 2em; (2 vezes o tamanho da fonte do pai).
+
+:root = html 
+3.rem
+relativo ao tamanho da fonte raiz (geralmente o html). se o html tem font-size:16px;, 1rem sera 16px. 
+Exemplo: padding: 1.5rem; (24px se o html tiver 16px)
+
+4.% (porcentagem)
+Relativo ao tamanho do elemento pai.
+Usado para fazer elementos se ajustarem ao tamanho do seu conteiner.
+Exemplo: width: 50%; (metade da largura do conteiner ).
+
+5. vw (viewport width)
+Relativo a largura da janela do navegador.
+Exemplo: width: 50vw; (50% da largura da janela visivel).
+
+6. vh (viewport height)
+relativo a altura da janela do navegador.
+Exemplo: height:100vh; (altura total da janela).
+
+ Resumo geral:
+
+ px: tamanho fixo.
+ em: relativo ao tamanho da fonte do elemento pai.
+ rem: relativo ao tamanho da fonte do elemento raiz.
+ %: relativo ao tamanho do elemento pai.
+ vw e vh: relativo ao tamanho da janela do navegador.
