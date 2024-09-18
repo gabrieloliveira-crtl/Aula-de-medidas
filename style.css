@@ -69,3 +69,8 @@ section::after{
         width: calc(33.333% - 2rem);
     }
 }
+@media (max-width:1200px) {
+    .div-filho-geral{
+        width: calc(50% - 2rem);
+    }
+}
