@@ -31,5 +31,8 @@ footer{
         background-color: rgb(0, 255, 153);
         color: rgb(72, 0, 255);
     }
+    header{
+        background-color: yellow;
+    }
 }
 
