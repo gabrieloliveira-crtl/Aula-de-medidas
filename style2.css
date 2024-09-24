@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 1.6; /* distancia entre as linhas */
+    
+}
+header{
+    padding: 3rem;
+    background-color: blue;
+}   
+.setio1{
+    padding: 10rem;
+    background-color: rgb(7, 20, 114);
+}
+.setio2{
+    padding: 9rem;
+    background-color: green;
+}
+footer{
+    padding: 2.5rem;
+    background-color: brown;
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+    .setio1{
+        background-color: yellow;
+        color: blueviolet;
+    }
+    .setio2{
+        background-color: rgb(0, 255, 153);
+        color: rgb(72, 0, 255);
+    }
+}
+

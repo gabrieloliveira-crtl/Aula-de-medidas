@@ -85,7 +85,7 @@ header {
 
 
 /* ajuste para telas grandes (largura acima de 1200px) */
-@media (min-width: 1200px){
+@media (min-width: 480px){
     .box {
         width: calc(33.333% - 2rem); /* largura de 33.333% para três caixas por linha */
     }
