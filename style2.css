@@ -3,36 +3,127 @@
     padding: 0;
     text-decoration: none;
     line-height: 1.6; /* distancia entre as linhas */
+    box-sizing: border-box;/* O box-sizing: border-box garante que o padding seja incluido no calculo da lagura, evitando que o conteudo ultrapasse a tela. */
     
 }
+html{/* aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa pagina */
+        width: 100vw;
+    height: 100vh;
+}
 header{
-    padding: 3rem;
+    padding: 10vh;
     background-color: blue;
+    width: 100vw;
 }   
+
 .setio1{
-    padding: 10rem;
-    background-color: rgb(7, 20, 114);
+    background-color: blueviolet;/* definição cor de fundo */
+    padding: 20vh;/* preenchimento */
+    display: flex;/* tornando a section flex */
+    justify-content: space-between;/* justificando o conteudo */
+    align-items: center;/* alinhando os itens ao centro */
+    width: 100vw;/* definindo a largura para 100% */
+}
+section:last-child{
+    background-color: cadetblue;
+    padding: 30vh;
+    width: 100vw;
+}
+.div-1 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+.div-2 img{
+    margin: 5rem;
+    width: 30rem;
 }
 .setio2{
-    padding: 9rem;
-    background-color: green;
+    background-color: rgb(43, 162, 226);/* definição cor de fundo */
+    padding: 20vh;/* preenchimento */
+    display: flex;/* tornando a section flex */
+    justify-content: space-between;/* justificando o conteudo */
+    align-items: center;/* alinhando os itens ao centro */
+    width: 100vw;/* definindo a largura para 100% */
+}
+
+.div2 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+.div1 img{
+    margin: 5rem;
+    width: 30rem;
 }
 footer{
-    padding: 2.5rem;
-    background-color: brown;
+   padding: 10vh;
+   background-color: rgb(124, 76, 4);
+  width: 100vw;
+  align-items: center;
+  
 }
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conteudo ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.img img{
+    width: 6.5rem;
+    margin-left: 36rem;
+}
+/* estilização para tamanhos de telas especificos ou seja, para uma largura maxima de 766px */
 
-@media (min-width: 600px) and (max-width: 1024px){
+@media (max-width: 999px){
     .setio1{
-        background-color: yellow;
-        color: blueviolet;
+display: flex;
+flex-direction: column ;
     }
+    .div-2 img{
+        margin: 0 auto;/* aqui estou chamando a imagem e definindo que a mesma fique com os valores superior/inferior em 0 e as laterais sejam auto */
+        width: 20rem;/* largura da imagem */
+    }
+    .div-1 p {
+        font-size: 25px;/* ajuste o tamanho da fonte para se adequar a teka menor */
+        line-height: 1.5;/* espaçamento entre linhas para melhor legibilidade */
+        width: 100%;/* certifique-se de ocupar toda a largura */
+        margin: 1em;
+    }
+
+}
+@media (max-width: 999px){
     .setio2{
-        background-color: rgb(0, 255, 153);
-        color: rgb(72, 0, 255);
+display: flex;
+flex-direction: column ;
     }
-    header{
-        background-color: yellow;
+    .div1 img{
+        margin: 0 auto;/* aqui estou chamando a imagem e definindo que a mesma fique com os valores superior/inferior em 0 e as laterais sejam auto */
+        width: 20rem;/* largura da imagem */
+    }
+    .div2 p {
+        font-size: 25px;/* ajuste o tamanho da fonte para se adequar a teka menor */
+        line-height: 1.5;/* espaçamento entre linhas para melhor legibilidade */
+        width: 100%;/* certifique-se de ocupar toda a largura */
+        margin: 1em;
+    }
+
+}
+@media (max-width: 999px){
+    footer{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .conteudo{
+        gap: 30px;
+    }
+    .conteudo h4{
+        margin-right: 100px;
+    }
+    .img img{
+        margin-right: 33rem;
     }
 }
-
