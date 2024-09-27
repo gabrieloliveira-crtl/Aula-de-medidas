@@ -32,7 +32,7 @@ header{
     
 }
 header i {
-    font-size: 50px;
+    font-size: 6em;
 }
 header img{
     border-radius: 100px;
@@ -44,10 +44,15 @@ header ul{
     gap: 20px;
 }
 header div button{
-    padding: 10px;
+    padding: 1.3rem;
+    width: 13rem;
+    height: 1.5rem;
     background-color: black;
     color: white;
-    border-radius: 20px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header div button:hover{
     transform: scale(1.2,1.2);
