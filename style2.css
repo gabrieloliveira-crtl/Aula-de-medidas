@@ -73,6 +73,7 @@ footer{
 }
 .img img{
     width: 6.5rem;
+    border-radius: 20px;
     margin-left: 36rem;
 }
 /* estilização para tamanhos de telas especificos ou seja, para uma largura maxima de 766px */
@@ -112,6 +113,7 @@ flex-direction: column ;
 
 }
 @media (max-width: 999px){
+
     footer{
         display: flex;
         gap: 20px;
@@ -126,4 +128,5 @@ flex-direction: column ;
     .img img{
         margin-right: 33rem;
     }
+
 }
